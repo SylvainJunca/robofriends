@@ -31,8 +31,9 @@ class App extends Component {
       return robot.name.toLowerCase().includes(searchfield.toLowerCase());
     })
 
-    if (robots){
-      return (
+    
+      return robots? 
+        (
         <div className='tc'>
           <h1 className='f1'>RoboFriends</h1>
           <SearchBox searchChange={this.onSearchChange}/>
@@ -40,10 +41,8 @@ class App extends Component {
             <CardList robots= {filteredRobots} />
           </Scroll>
         </div>
-      )
-    } else {
-      return <h1>Loading</h1>
-    }
+        ) :
+        <h1>Loading</h1>
   }   
 }
 
