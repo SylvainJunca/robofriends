@@ -37,5 +37,5 @@ This app is buit thanks to React, Redux and Tachyons
 
 - The app is Responsive design
 - You can search for a robot
-- The search shows dynamicaly all the result possible based on what you type
+- The search shows dynamically all the possible results based on what you type
 
